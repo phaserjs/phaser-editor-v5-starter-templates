@@ -1,0 +1,24 @@
+{
+	"type": "module",
+	"name": "phaser-editor-v5-starter-templates",
+	"version": "1.0.0",
+	"description": "Official starter and example templates for Phaser Editor v5.",
+	"main": "build.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/phaserjs/phaser-editor-v5-starter-templates.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/phaserjs/phaser-editor-v5-starter-templates/issues"
+	},
+	"homepage": "https://github.com/phaserjs/phaser-editor-v5-starter-templates#readme",
+	"dependencies": {
+		"@types/node": "^22.13.16",
+		"archiver": "^7.0.1"
+	}
+}
