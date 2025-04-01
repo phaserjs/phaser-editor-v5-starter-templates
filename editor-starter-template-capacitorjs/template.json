@@ -1,0 +1,11 @@
+{
+    "title": "Basic CapacitorJS",
+    "description": "A simple template for building native wrappers with CapiacitorJS.",
+    "tags": [
+        "typescript",
+        "webpack",
+        "capacitor",
+        "android",
+        "ios"
+    ]
+}

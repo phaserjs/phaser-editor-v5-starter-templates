@@ -1,0 +1,9 @@
+{
+    "title": "Spine Starter",
+    "description": "A project template for the official Spine-Phaser runtime.",
+    "tags": [
+        "typescript",
+        "webpack",
+        "spine"
+    ]
+}
