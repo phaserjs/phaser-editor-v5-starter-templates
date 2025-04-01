@@ -1,0 +1,258 @@
+{
+    "id": "01aefa93-6044-4159-8358-7e91310aa05f",
+    "sceneType": "SCENE",
+    "settings": {
+        "snapWidth": 70,
+        "snapHeight": 70,
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Level",
+        "borderWidth": 1280,
+        "borderHeight": 720,
+        "box2dGenerateWorldCode": true
+    },
+    "displayList": [
+        {
+            "type": "b2Body",
+            "id": "d9dde43b-c5d0-4e41-9a2b-5c1b3e6dccf1",
+            "label": "platformBody",
+            "positionX": 284,
+            "positionY": -599,
+            "list": [
+                {
+                    "type": "b2BoxShape",
+                    "id": "bc01f0b9-d8a4-4c0f-baa7-3794a143e9e6",
+                    "label": "platformShape",
+                    "halfWidth": 31,
+                    "halfHeight": 68
+                }
+            ]
+        },
+        {
+            "type": "TileSprite",
+            "id": "e8afe386-ffec-4bbb-8a08-ac3ec214fed7",
+            "label": "bg",
+            "scope": "CLASS",
+            "texture": {
+                "key": "colored_grass"
+            },
+            "y": -304,
+            "originX": 0,
+            "originY": 0,
+            "width": 2100,
+            "height": 1024
+        },
+        {
+            "type": "TileSprite",
+            "id": "a7e0bf02-ba16-4379-9dfa-37179b1500c7",
+            "label": "grass",
+            "texture": {
+                "key": "grass"
+            },
+            "x": 1050,
+            "y": 700,
+            "width": 2100,
+            "height": 70,
+            "list": [
+                {
+                    "type": "b2Body",
+                    "id": "ada19e9d-ddf6-4bfa-a18e-d387f964fc7c",
+                    "label": "body",
+                    "positionX": 1050,
+                    "positionY": -700,
+                    "list": [
+                        {
+                            "type": "b2BoxShape",
+                            "id": "2c6b7d9b-99d5-45b3-ace0-f697caec6135",
+                            "label": "shape",
+                            "halfWidth": 1050,
+                            "halfHeight": 35
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefabId": "bb506217-58ae-4055-962a-df76ab9c447c",
+            "id": "fb477354-d769-4e62-b92b-f3eb9a107a70",
+            "unlock": [
+                "x",
+                "y",
+                "texture"
+            ],
+            "label": "stone2",
+            "texture": {
+                "key": "elementStone011"
+            },
+            "x": 1610,
+            "y": 560
+        },
+        {
+            "prefabId": "112c3d6b-0f1c-4a91-b93c-1fc08b675d61",
+            "id": "9bc4a946-9ac7-4feb-8b08-1584cb3e608e",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "wood4",
+            "x": 1610,
+            "y": 490
+        },
+        {
+            "prefabId": "96ddff94-8042-49e0-aab4-aff2c5abd72f",
+            "id": "ee192eb7-59e3-49ad-b358-b1563587b5b7",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "debris2",
+            "x": 1435,
+            "y": 356
+        },
+        {
+            "prefabId": "964b667e-a821-40f2-b898-1beffd6c7d8f",
+            "id": "b04ff0a2-6fcc-41ea-bcdc-edbebedab5af",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "wood3",
+            "x": 1400,
+            "y": 560
+        },
+        {
+            "prefabId": "261d0a7f-86d5-490e-9ca9-4345eb68fb76",
+            "id": "d2686532-27f7-479c-9189-c10ae3835b7d",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "wood2",
+            "x": 1478,
+            "y": 420
+        },
+        {
+            "prefabId": "bb506217-58ae-4055-962a-df76ab9c447c",
+            "id": "6a375b28-960f-45e1-aad8-562e73e09254",
+            "unlock": [
+                "x",
+                "y",
+                "texture"
+            ],
+            "label": "stone1",
+            "texture": {
+                "key": "elementStone011"
+            },
+            "x": 1610,
+            "y": 630
+        },
+        {
+            "prefabId": "53be2c5b-244b-4792-b53f-bcb96a52b2bb",
+            "id": "8a9b0fd3-9a42-445f-aab2-27572fc47ec7",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "debris1",
+            "x": 1499,
+            "y": 358
+        },
+        {
+            "type": "Image",
+            "id": "4391fcfd-089f-46d5-80fa-2897186741f8",
+            "label": "stone4",
+            "texture": {
+                "key": "elementStone011"
+            },
+            "x": 284,
+            "y": 564
+        },
+        {
+            "type": "Image",
+            "id": "a87933f1-0fb5-4d02-abba-95eb167e6477",
+            "label": "stone3",
+            "texture": {
+                "key": "elementStone011"
+            },
+            "x": 283,
+            "y": 633
+        },
+        {
+            "prefabId": "112c3d6b-0f1c-4a91-b93c-1fc08b675d61",
+            "id": "afc1cf0d-beef-483b-a095-57794da6e8a0",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "wood",
+            "x": 971,
+            "y": 410
+        },
+        {
+            "prefabId": "964b667e-a821-40f2-b898-1beffd6c7d8f",
+            "id": "0680a468-dc94-4665-9239-a3b9f89de6ef",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "wood1",
+            "x": 969,
+            "y": 556
+        },
+        {
+            "prefabId": "96ddff94-8042-49e0-aab4-aff2c5abd72f",
+            "id": "a03ee23e-b059-4384-9236-21b392453ee2",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "debris",
+            "x": 1476,
+            "y": 309
+        },
+        {
+            "prefabId": "8472517b-56ea-4360-9f20-108d332cd757",
+            "id": "f8708da7-3bf6-4c3d-973e-ac6482ac713a",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "player",
+            "scope": "CLASS",
+            "x": 282,
+            "y": 450
+        },
+        {
+            "prefabId": "bb506217-58ae-4055-962a-df76ab9c447c",
+            "id": "6bfe00ea-0c79-4000-8e6d-f84eb4d9b4c2",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "stone",
+            "x": 1060,
+            "y": 630
+        },
+        {
+            "prefabId": "bb506217-58ae-4055-962a-df76ab9c447c",
+            "id": "ff7ab3f5-9343-47e2-a1e5-6e1ab50f1017",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "stone_1",
+            "x": 1037,
+            "y": 562
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

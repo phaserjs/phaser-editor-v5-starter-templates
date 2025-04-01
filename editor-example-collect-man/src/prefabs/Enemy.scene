@@ -1,0 +1,41 @@
+{
+    "id": "76a567c3-a805-4acd-b944-711cfb4f633e",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 672,
+        "borderHeight": 480
+    },
+    "displayList": [
+        {
+            "type": "ArcadeSprite",
+            "id": "95280e85-1d0c-49d8-a5e8-b8f9fc8d7107",
+            "label": "enemy_down",
+            "texture": {
+                "key": "characters",
+                "frame": 49
+            },
+            "x": 283,
+            "y": 205,
+            "originX": 0,
+            "originY": 0,
+            "animationPlayMethod": 1,
+            "animationKey": "enemy-down",
+            "collideWorldBounds": true,
+            "body.width": 32,
+            "body.height": 32
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

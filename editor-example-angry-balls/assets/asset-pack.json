@@ -1,0 +1,74 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/images/alienPink_round.png",
+                "type": "image",
+                "key": "alienPink_round"
+            },
+            {
+                "url": "assets/images/colored_grass.png",
+                "type": "image",
+                "key": "colored_grass"
+            },
+            {
+                "url": "assets/images/debrisWood_2.png",
+                "type": "image",
+                "key": "debrisWood_2"
+            },
+            {
+                "url": "assets/images/debrisWood_3.png",
+                "type": "image",
+                "key": "debrisWood_3"
+            },
+            {
+                "url": "assets/dino.png",
+                "key": "dino",
+                "type": "image"
+            },
+            {
+                "url": "assets/images/elementStone011.png",
+                "type": "image",
+                "key": "elementStone011"
+            },
+            {
+                "url": "assets/images/elementWood000.png",
+                "type": "image",
+                "key": "elementWood000"
+            },
+            {
+                "url": "assets/images/elementWood001.png",
+                "type": "image",
+                "key": "elementWood001"
+            },
+            {
+                "url": "assets/images/elementWood015.png",
+                "type": "image",
+                "key": "elementWood015"
+            },
+            {
+                "url": "assets/images/elementWood019.png",
+                "type": "image",
+                "key": "elementWood019"
+            },
+            {
+                "url": "assets/images/elementWood035.png",
+                "type": "image",
+                "key": "elementWood035"
+            },
+            {
+                "url": "assets/images/grass.png",
+                "type": "image",
+                "key": "grass"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false,
+        "visible": true
+    }
+}

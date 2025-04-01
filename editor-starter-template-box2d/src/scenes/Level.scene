@@ -1,0 +1,88 @@
+{
+    "id": "01aefa93-6044-4159-8358-7e91310aa05f",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Level",
+        "borderWidth": 1280,
+        "borderHeight": 720,
+        "box2dGenerateWorldCode": true,
+        "box2dSceneGenerateDebugCode": true
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "7d5827fd-34f6-473f-90e0-b9424a51d5fa",
+            "label": "dino",
+            "scope": "CLASS",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 250,
+            "hitArea.height": 250,
+            "texture": {
+                "key": "dino"
+            },
+            "x": 640,
+            "y": 288,
+            "list": [
+                {
+                    "type": "b2Body",
+                    "id": "b431c97b-8055-41de-98e4-a8d8c5de7961",
+                    "label": "dinoBody",
+                    "_type": 2,
+                    "positionX": 640,
+                    "positionY": -288,
+                    "list": [
+                        {
+                            "type": "b2PolygonShape",
+                            "id": "e0d79151-8965-414b-a1a7-c8ce3aa346e9",
+                            "label": "dinoShape",
+                            "points": "24.459450319691882 -111.95298247032741 78.80519957882711 -86.7210274571575 96.27347612640631 -39.16849685541422 48.720945524662966 107.37093418261097 6.991173772112802 116.10507245640053 -79.37974915758423 61.75932319726536 -118.19814148553792 -66.34137148498178 -78.4092893493854 -97.39608534734475"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Text",
+            "id": "b2b3dbd5-2106-41fa-8a04-9b511e3401a9",
+            "label": "welcome",
+            "scope": "CLASS",
+            "x": 640,
+            "y": 639,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Phaser 3 + Phaser Editor v4 + Box2D",
+            "fontFamily": "Arial",
+            "fontSize": "30px",
+            "list": [
+                {
+                    "type": "b2Body",
+                    "id": "2e5797a1-a654-4644-8eae-0dd8db77ab49",
+                    "label": "textBody",
+                    "positionX": 640,
+                    "positionY": -639,
+                    "list": [
+                        {
+                            "type": "b2BoxShape",
+                            "id": "cbfb234a-4d97-4904-89e2-5463459a0fb3",
+                            "label": "textShape",
+                            "halfWidth": 250.5,
+                            "halfHeight": 16.2451171875
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

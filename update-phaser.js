@@ -1,0 +1,111 @@
+#!/usr/bin/env node
+
+const path = require("path");
+const fs = require("fs");
+const { execSync } = require("child_process");
+
+
+
+const phaserVersion = require(process.env.PHASER_PATH + "/phaser/package.json").version;
+
+console.log("Phaser version:", phaserVersion);
+
+const currentDir = process.cwd();
+
+const items = fs.readdirSync(currentDir, { withFileTypes: true });
+
+const nodeProjects = items
+    .filter(item => item.isDirectory())
+    .map(dir => path.join(currentDir, dir.name))
+    .filter(folder => fs.existsSync(path.join(folder, "node_modules")));
+
+const jsProjects = items
+    .filter(item => item.isDirectory())
+    .map(dir => path.join(currentDir, dir.name))
+    .filter(folder => !fs.existsSync(path.join(folder, "node_modules")));
+
+
+for (const project of jsProjects) {
+
+    updateJSProject(project);
+}
+
+for (const project of nodeProjects) {
+
+    updateNodeProject(project);
+}
+
+function updateNodeProject(project) {
+
+    console.log(`Updating node project: ${project}`);
+
+    execSync(`npm install phaser@latest`, { cwd: project });
+
+    console.log(`Updated package.json`);
+
+    autoCommitAndPush(project);
+}
+
+
+function updateJSProject(project) {
+
+    console.log(`Updating simple JS project: ${project}`);
+
+    console.log(`Updating index.html`);
+
+    const indexFile = path.join(project, "index.html");
+
+    const str = fs.readFileSync(indexFile, "utf8");
+
+    let newStr = "";
+
+    for (line of str.split("\n")) {
+
+        if (line.includes("phaser.min.js")) {
+
+            line = `    <script src="https://cdn.jsdelivr.net/npm/phaser@v${phaserVersion}/dist/phaser.min.js"></script>`
+        }
+
+        newStr += line + "\n";
+    }
+
+    fs.writeFileSync(indexFile, newStr);
+
+    console.log(`Copying type defs...`);
+
+    fs.copyFileSync(path.join(process.env.PHASER_PATH, "phaser", "types", "phaser.d.ts"), path.join(project, "types", "phaser.d.ts"));
+    fs.copyFileSync(path.join(process.env.PHASER_PATH, "phaser", "types", "matter.d.ts"), path.join(project, "types", "matter.d.ts"));
+
+    autoCommitAndPush(project);
+}
+
+function autoCommitAndPush(folderPath) {
+
+    // Check for changes
+    const status = execSync("git status --porcelain", {
+        cwd: folderPath,
+        encoding: "utf-8"
+    });
+
+    if (status.trim().length === 0) {
+
+        console.log(`[${folderPath}] No changes to commit.`);
+        return;
+    }
+
+    console.log(`[${folderPath}] Changes detected. Committing...`);
+
+    // Commit all changes
+    execSync(`git commit -a -m "update to Phaser ${phaserVersion}"`, {
+        cwd: folderPath,
+        stdio: "inherit"
+    });
+
+    // Push changes
+    execSync("git push", {
+        cwd: folderPath,
+        stdio: "inherit"
+    });
+
+    console.log(`[${folderPath}] Changes committed and pushed.`);
+}

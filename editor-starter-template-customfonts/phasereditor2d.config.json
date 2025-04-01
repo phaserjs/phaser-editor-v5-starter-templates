@@ -1,0 +1,14 @@
+{
+    "plugins": [
+        "phasereditor2d-plugins"
+    ],
+    "scripts": [
+        "@phaserjs/editor-scripts-base",
+        "@phaserjs/editor-scripts-quick"
+    ],
+    "skip": [
+        "dist",
+        "phasereditor2d-plugins"
+    ],
+    "playUrl": "http://localhost:8080"
+}

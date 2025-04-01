@@ -1,0 +1,51 @@
+{
+    "id": "96ddff94-8042-49e0-aab4-aff2c5abd72f",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1280,
+        "borderHeight": 720
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "8f2e6cef-a812-458b-a699-d6ed6db2bb1b",
+            "label": "debris2",
+            "texture": {
+                "key": "debrisWood_2"
+            },
+            "x": 634,
+            "y": 258,
+            "list": [
+                {
+                    "type": "b2Body",
+                    "id": "0ea75b8d-76a1-4157-9b2c-788b5de5c169",
+                    "label": "body",
+                    "_type": 2,
+                    "positionX": 634,
+                    "positionY": -258,
+                    "list": [
+                        {
+                            "type": "b2PolygonShape",
+                            "id": "5ebd1ae2-cb79-4778-ab3a-14bf504847ab",
+                            "label": "shape",
+                            "points": "-25.105138566407845 -19.858408917583176 12.64858113440664 -28.387848152594472 26.035131445289835 -1.1095946889080892 10.21270783863099 28.302290725651744 3.602415730736084 28.113425236854738 -25.105138566407845 -12.681520343297166"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

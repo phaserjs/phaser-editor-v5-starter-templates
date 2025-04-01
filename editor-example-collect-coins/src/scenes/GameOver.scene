@@ -1,0 +1,44 @@
+{
+    "id": "73ee30e8-c11f-4b12-a1e3-c392dbc85192",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "GameOver"
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "91cd773e-3c9f-4a08-b4b4-ee28fb873c76",
+            "label": "background",
+            "texture": {
+                "key": "background"
+            },
+            "x": 408,
+            "y": 408
+        },
+        {
+            "prefabId": "495e6ab0-8932-4185-87fc-30adf59d00e6",
+            "id": "a49c74ca-8494-47ba-bc70-90edf7c3275f",
+            "unlock": [
+                "x",
+                "y",
+                "text"
+            ],
+            "label": "uIText",
+            "x": 400,
+            "y": 300,
+            "text": "Game Over"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

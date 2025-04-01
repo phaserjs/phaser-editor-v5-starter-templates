@@ -1,0 +1,143 @@
+{
+    "id": "01aefa93-6044-4159-8358-7e91310aa05f",
+    "sceneType": "SCENE",
+    "settings": {
+        "snapWidth": 816,
+        "snapHeight": 816,
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Level"
+    },
+    "displayList": [
+        {
+            "type": "Layer",
+            "id": "39bef0bd-44a2-426c-9499-8e9803d530b7",
+            "label": "backgroundLayer",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "ba77845b-9a08-45a3-8b28-effbb4682804",
+                    "label": "background1",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "background"
+                    },
+                    "x": -8,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "db1339c2-a861-40e7-ba7c-e46570f78174",
+                    "label": "background2",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "background"
+                    },
+                    "x": 808,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Layer",
+            "id": "9a6ce7e0-0db5-4540-9362-44d35d5f19d9",
+            "label": "obstacleLayer",
+            "scope": "CLASS"
+        },
+        {
+            "type": "Layer",
+            "id": "37b65c5a-dd36-49c6-acf6-5c02ee936d41",
+            "label": "coinLayer",
+            "scope": "CLASS"
+        },
+        {
+            "prefabId": "bf8ce836-f7fb-4e84-b1b3-928f4dbd0941",
+            "id": "6f062ff8-1a5d-4a2b-b208-4dca1b0ad415",
+            "unlock": [
+                "x",
+                "y",
+                "texture"
+            ],
+            "label": "player",
+            "scope": "CLASS",
+            "texture": {
+                "key": "bat",
+                "frame": 2
+            },
+            "x": 400,
+            "y": 200
+        },
+        {
+            "type": "Layer",
+            "id": "5dab73f0-1a52-43f3-b289-59466b851c0b",
+            "label": "uiLayer",
+            "list": [
+                {
+                    "prefabId": "495e6ab0-8932-4185-87fc-30adf59d00e6",
+                    "id": "6ab28aa5-0eb2-49d1-8e9e-91bc3a881f10",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "text"
+                    ],
+                    "label": "tutorialText",
+                    "scope": "CLASS",
+                    "x": 400,
+                    "y": 300,
+                    "text": "Tap to fly!"
+                },
+                {
+                    "prefabId": "495e6ab0-8932-4185-87fc-30adf59d00e6",
+                    "id": "5970dba0-26ea-49a1-9780-718e2d247d79",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "text",
+                        "fontSize"
+                    ],
+                    "label": "scoreText",
+                    "scope": "CLASS",
+                    "x": 400,
+                    "y": 50,
+                    "text": "Score: 0",
+                    "fontSize": "28px"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [
+        {
+            "id": "e0a1d8dd-1f61-45bf-8f61-38c6aa39e597",
+            "type": "Collider",
+            "label": "player_vs_spikes",
+            "scope": "LOCAL",
+            "object1": "player",
+            "object2": "obstacleLayer.list",
+            "overlapOnly": true,
+            "collideCallback": "this.hitObstacle",
+            "callbackContext": "this"
+        },
+        {
+            "id": "65974c41-a5c5-4728-952c-2439517f1385",
+            "type": "Collider",
+            "label": "player_vs_coins",
+            "scope": "LOCAL",
+            "object1": "player",
+            "object2": "coinLayer.list",
+            "overlapOnly": true,
+            "collideCallback": "this.collectCoin",
+            "callbackContext": "this"
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

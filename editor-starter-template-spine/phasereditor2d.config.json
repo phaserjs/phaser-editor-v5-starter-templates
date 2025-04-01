@@ -1,0 +1,11 @@
+{
+    "plugins": [],
+    "scripts": [
+        "@phaserjs/editor-scripts-base",
+        "@phaserjs/editor-scripts-quick"
+    ],
+    "skip": [
+        "dist"
+    ],
+    "playUrl": "http://localhost:8080"
+}
