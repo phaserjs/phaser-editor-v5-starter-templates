@@ -1,0 +1,59 @@
+[
+    {
+        "path": "editor-starter-template-phaser4-vite",
+        "title": "Phaser 4 Beta Vite Starter",
+        "description": "A starter template for Phaser 4 Beta",
+        "image": "images/editor/starter-phaser4-vite.png",
+        "website": "",
+        "zip_url": "",
+        "tags": [
+            "typescript",
+            "vite",
+            "phaser4-beta"
+        ],
+        "author": "Phaser Studio"
+    },
+    {
+        "path": "basic-capacitorjs",
+        "title": "Basic CapacitorJS",
+        "description": "A simple template for building native wrappers with CapiacitorJS.",
+        "image": "images/editor/starter-capacitorjs.jpg",
+        "website": "",
+        "zip_url": "",
+        "tags": [
+            "typescript",
+            "webpack",
+            "capacitor",
+            "android",
+            "ios"
+        ],
+        "author": "Phaser Studio"
+    },
+    {
+        "path": "spine",
+        "title": "Spine Starter",
+        "description": "A project template for the official Spine-Phaser runtime.",
+        "image": "spine/assets/starter-project-spine.png",
+        "website": "https://github.com/phaserjs/editor-starter-template-spine/",
+        "zip_url": "https://github.com/phaserjs/editor-starter-template-spine/archive/refs/tags/v2.0.1.zip",
+        "tags": [
+            "typescript",
+            "webpack",
+            "spine"
+        ],
+        "author": "Phaser Studio"
+    },
+    {
+        "path": "box2d",
+        "title": "Box2D Starter",
+        "description": "A project starter for Box2D (JavaScript).",
+        "image": "box2d/assets/starter-box2d.png",
+        "website": "https://github.com/phaserjs/editor-starter-template-box2d",
+        "zip_url": "https://github.com/phaserjs/editor-starter-template-box2d/archive/refs/tags/v1.0.2.zip",
+        "tags": [
+            "javascript",
+            "box2d"
+        ],
+        "author": "Phaser Studio"
+    }
+]

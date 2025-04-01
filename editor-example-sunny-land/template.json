@@ -1,0 +1,8 @@
+{
+    "title": "Sunny land (external tilemap)",
+    "description": "A platformer based on a Tiled map, and Arcade physics.",
+    "tags": [
+        "javascript",
+        "tilemap"
+    ]
+}

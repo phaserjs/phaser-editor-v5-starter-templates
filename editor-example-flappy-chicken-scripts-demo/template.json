@@ -1,0 +1,9 @@
+{
+    "title": "Flappy Chicken",
+    "description": "A cute flappy chicken demo. Made with script nodes.",
+    "tags": [
+        "script-nodes",
+        "webpack",
+        "typescript"
+    ]
+}

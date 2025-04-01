@@ -1,0 +1,317 @@
+[
+    {
+        "path": "templates/template-angular",
+        "title": "Angular Template",
+        "description": "A Phaser 3 project template that demonstrates Angular communication.",
+        "author": "Phaser Studio",
+        "image": "screenshots/angular.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-angular",
+        "tags": [
+            "phaser",
+            "phaser3",
+            "angular",
+            "Angular"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-angular/archive/main.zip?v=1.0.1-847-848"
+    },
+    {
+        "path": "templates/template-bun",
+        "title": "Bun Template",
+        "description": "A Phaser 3 template using bun.",
+        "author": "Phaser Studio",
+        "image": "screenshots/bun.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-bun",
+        "tags": [
+            "Phaser",
+            "Game",
+            "Starter",
+            "Template",
+            "template-bun"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-bun/archive/main.zip?v=1.0.1-849-850"
+    },
+    {
+        "path": "templates/template-esbuild",
+        "title": "Esbuild Template",
+        "description": "A Phaser 3 template using esbuild.",
+        "author": "Phaser Studio",
+        "image": "screenshots/esbuild.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-esbuild",
+        "tags": [
+            "Phaser",
+            "Game",
+            "Starter",
+            "Template",
+            "template-esbuild"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-esbuild/archive/main.zip?v=1.2.1-848-849"
+    },
+    {
+        "path": "templates/template-esbuild-ts",
+        "title": "Esbuild TypeScript Template",
+        "description": "A Phaser 3 TypeScript template using esbuild.",
+        "author": "Phaser Studio",
+        "image": "screenshots/esbuild-ts.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-esbuild-ts",
+        "tags": [
+            "Phaser",
+            "Game",
+            "Starter",
+            "Template",
+            "template-esbuild-ts"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-esbuild-ts/archive/main.zip?v=1.2.1-850-851"
+    },
+    {
+        "path": "templates/template-nextjs",
+        "title": "Nextjs Template",
+        "description": "A Phaser 3 Next.js project template that demonstrates Next.js with React communication and uses Vite for bundling.",
+        "author": "Phaser Studio",
+        "image": "screenshots/nextjs.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-nextjs",
+        "tags": [
+            "phaser",
+            "phaser3",
+            "next",
+            "nextjs",
+            "vite",
+            "typescript"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-nextjs/archive/main.zip?v=1.1.1-852-853"
+    },
+    {
+        "path": "templates/template-parcel",
+        "title": "Parcel Template",
+        "description": "A Phaser 3 template using Parcel 2 as the bundler.",
+        "author": "Phaser Studio",
+        "image": "screenshots/parcel.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-parcel",
+        "tags": [
+            "Phaser",
+            "Game",
+            "Starter",
+            "Template",
+            "template-parcel"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-parcel/archive/main.zip?v=1.2.1-854-855"
+    },
+    {
+        "path": "templates/template-parcel-ts",
+        "title": "Parcel TypeScript Template",
+        "description": "A Phaser 3 TypeScript template using Parcel 2 as the bundler.",
+        "author": "Phaser Studio",
+        "image": "screenshots/parcel-ts.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-parcel-ts",
+        "tags": [
+            "Phaser",
+            "Game",
+            "Starter",
+            "Template",
+            "template-parcel-ts"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-parcel-ts/archive/main.zip?v=1.2.0-856-857"
+    },
+    {
+        "path": "templates/template-react",
+        "title": "React Template",
+        "description": "A Phaser 3 project template that demonstrates React communication and uses Vite for bundling.",
+        "author": "Phaser Studio",
+        "image": "screenshots/react.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-react",
+        "tags": [
+            "phaser",
+            "phaser3",
+            "react",
+            "vite"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-react/archive/main.zip?v=1.1.1-858-859"
+    },
+    {
+        "path": "templates/template-react-ts",
+        "title": "React TypeScript Template",
+        "description": "A Phaser 3 TypeScript project template that demonstrates React communication and uses Vite for bundling.",
+        "author": "Phaser Studio",
+        "image": "screenshots/react-ts.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-react-ts",
+        "tags": [
+            "phaser",
+            "phaser3",
+            "react",
+            "vite",
+            "typescript"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-react-ts/archive/main.zip?v=1.0.3-860-861"
+    },
+    {
+        "path": "templates/template-remix",
+        "title": "Remix Template",
+        "description": "A Phaser 3 Remix project template that demonstrates Remix with React communication and uses Vite for bundling.",
+        "author": "Phaser Studio",
+        "image": "screenshots/remix.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-remix",
+        "tags": [
+            "phaser",
+            "phaser3",
+            "remix",
+            "vite",
+            "typescript"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-remix/archive/main.zip?v=1.0.1-862-863"
+    },
+    {
+        "path": "templates/template-rollup",
+        "title": "Rollup Template",
+        "description": "A Phaser 3 template using Rollup.",
+        "author": "Phaser Studio",
+        "image": "screenshots/rollup.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-rollup",
+        "tags": [
+            "Phaser",
+            "Game",
+            "Starter",
+            "Template",
+            "template-rollup"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-rollup/archive/main.zip?v=1.2.0-864-865"
+    },
+    {
+        "path": "templates/template-rollup-ts",
+        "title": "Rollup TypeScript Template",
+        "description": "A Phaser 3 TypeScript template using Rollup.",
+        "author": "Phaser Studio",
+        "image": "screenshots/rollup-ts.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-rollup-ts",
+        "tags": [
+            "Phaser",
+            "Game",
+            "Starter",
+            "Template",
+            "template-rollup-ts"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-rollup-ts/archive/main.zip?v=1.2.1-866-867"
+    },
+    {
+        "path": "templates/template-solid",
+        "title": "Solidjs Template",
+        "description": "A Phaser 3 template using SolidJS.",
+        "author": "Phaser Studio",
+        "image": "screenshots/solid.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-solid",
+        "tags": [
+            "phaser",
+            "phaser3",
+            "solidjs",
+            "vite",
+            "typescript"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-solid/archive/main.zip?v=1.1.1-868-869"
+    },
+    {
+        "path": "templates/template-svelte",
+        "title": "Svelte Template",
+        "description": "A Phaser 3 project template that demonstrates Svelte communication and uses Vite for bundling.",
+        "author": "Phaser Studio",
+        "image": "screenshots/svelte.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-svelte",
+        "tags": [
+            "phaser",
+            "phaser3",
+            "svelte",
+            "vite"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-svelte/archive/main.zip?v=1.1.2-849-850"
+    },
+    {
+        "path": "templates/template-vite",
+        "title": "Vite Template",
+        "description": "A Phaser 3 template using Vite.",
+        "author": "Phaser Studio",
+        "image": "screenshots/vite.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-vite",
+        "tags": [
+            "Phaser",
+            "Game",
+            "Starter",
+            "Template",
+            "template-vite"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-vite/archive/main.zip?v=1.3.2-851-852"
+    },
+    {
+        "path": "templates/template-vite-ts",
+        "title": "Vite TypeScript Template",
+        "description": "A Phaser 3 TypeScript template using Vite.",
+        "author": "Phaser Studio",
+        "image": "screenshots/vite-ts.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-vite-ts",
+        "tags": [
+            "Phaser",
+            "Game",
+            "Starter",
+            "Template",
+            "template-vite-ts"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-vite-ts/archive/main.zip?v=1.3.2-853-854"
+    },
+    {
+        "path": "templates/template-vue",
+        "title": "Vue Template",
+        "description": "A Phaser 3 project template that demonstrates Vue communication and uses Vite for bundling.",
+        "author": "Phaser Studio",
+        "image": "screenshots/vue.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-vue",
+        "tags": [
+            "phaser",
+            "phaser3",
+            "vue",
+            "vite"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-vue/archive/main.zip?v=1.1.3-855-856"
+    },
+    {
+        "path": "templates/template-vue-ts",
+        "title": "Vue TypeScript Template",
+        "description": "A Phaser 3 TypeScript project template that demonstrates Vue communication and uses Vite for bundling.",
+        "author": "Phaser Studio",
+        "image": "screenshots/vue-ts.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-vue-ts",
+        "tags": [
+            "phaser",
+            "phaser3",
+            "typescript",
+            "vue",
+            "vite"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-vue-ts/archive/main.zip?v=1.2.1-857-858"
+    },
+    {
+        "path": "templates/template-webpack",
+        "title": "Webpack Template",
+        "author": "Phaser Studio",
+        "image": "screenshots/webpack.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-webpack",
+        "tags": [
+            "Phaser",
+            "Game",
+            "Starter",
+            "Template",
+            "template-webpack"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-webpack/archive/main.zip?v=3.2.1-859-860"
+    },
+    {
+        "path": "templates/template-webpack-ts",
+        "title": "Webpack Template",
+        "author": "Phaser Studio",
+        "image": "screenshots/webpack-ts.png",
+        "website": "https://github.com/phaserjs/phaser-editor-template-webpack-ts",
+        "tags": [
+            "Phaser",
+            "Game",
+            "Starter",
+            "Template",
+            "template-webpack-ts"
+        ],
+        "zip_url": "https://github.com/phaserjs/phaser-editor-template-webpack-ts/archive/main.zip?v=1.2.1-861-862"
+    }
+]

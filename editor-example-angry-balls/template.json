@@ -1,0 +1,8 @@
+{
+    "title": "Angry Balls (Box2D)",
+    "description": "A tiny Box2D demo with an angry birds-like gameplay.",
+    "tags": [
+        "javascript",
+        "box2d"
+    ]
+}
