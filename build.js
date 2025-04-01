@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 import { createHash } from "crypto";
-import { readdir, stat, readFile, mkdir } from "fs/promises";
+import { readdir, stat, readFile } from "fs/promises";
 import { join } from "path";
-import fs from "fs";
+import fs, { cpSync, existsSync, mkdirSync, rmSync, writeSync } from "fs";
 import archiver from "archiver";
-import { rm } from "fs/promises";
-import { exit } from "process";
+
+const STORAGE_URL= "https://example.com/";
+const REPO_URL = "https://github.com/phaserjs/phaser-editor-v5-starter-templates";
 
 const skipFolders = new Set([
     ".git",
@@ -84,10 +85,22 @@ async function zipFolder(sourceFolder, outputZipPath) {
 
 console.log("\nCleaning build folder...\n");
 
-await rm("build/", { recursive: true, force: true });
-await mkdir("build/");
+rmSync("build/", { recursive: true, force: true });
 
-const projectNames = (await readdir(".")).filter((name) => name.startsWith("editor-"));
+[
+    "build",
+    "build/examples",
+    "build/starters",
+    "build/examples/screenshots",
+    "build/starters/screenshots",
+    "build/files",
+
+].forEach(d => mkdirSync(d, { recursive: true }));
+
+const projectNames = (await readdir(".")).filter((name) => name.startsWith("editor-") && existsSync(`${name}/template.json`));
+
+const examplesData = [];
+const startersData = [];
 
 for (const projectName of projectNames) {
 
@@ -97,7 +110,41 @@ for (const projectName of projectNames) {
 
     const hash = await hashFolder(projectName);
 
+    const isExample = projectName.includes("-example-");
+    const siteName = isExample ? "examples" : "starters";
+
+    const templateJSON = JSON.parse(await readFile(`${projectName}/template.json`, "utf8"));
+
+    const templateData = {
+        ...templateJSON,
+        image: `screenshots/${projectName}.png`,
+        website: `${REPO_URL}/tree/main/${projectName}`,
+        zip_url: `${STORAGE_URL}/files/${projectName}-${hash}.zip`,
+        name: projectName
+    };
+
+    (isExample ? examplesData : startersData).push(templateData);
+    
+    // copy template.png
+
+    cpSync(`${projectName}/template.png`, `build/${siteName}/screenshots/${projectName}.png`);
+
     console.log(`Zipping files...`);
 
-    await zipFolder("editor-example-a-day-in-the-beach", `build/${projectName}-${hash}.zip`);
+    // await zipFolder("editor-example-a-day-in-the-beach", `build/${projectName}-${hash}.zip`);
 }
+
+
+writeSync(
+    fs.openSync("build/examples/templates.json", "w"),
+    JSON.stringify(examplesData, null, 4)
+);
+
+writeSync(
+    fs.openSync("build/starters/templates.json", "w"),
+    JSON.stringify(startersData, null, 4)
+);
+
+// fs.cpSync(srcDir, destDir, { recursive: true });
+
+
