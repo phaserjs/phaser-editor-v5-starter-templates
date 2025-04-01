@@ -89,11 +89,10 @@ rmSync("build/", { recursive: true, force: true });
 
 [
     "build",
-    "build/examples",
-    "build/starters",
+    "build/examples/files",
+    "build/starters/files",
     "build/examples/screenshots",
     "build/starters/screenshots",
-    "build/files",
 
 ].forEach(d => mkdirSync(d, { recursive: true }));
 
@@ -119,7 +118,7 @@ for (const projectName of projectNames) {
         ...templateJSON,
         image: `screenshots/${projectName}.png`,
         website: `${REPO_URL}/tree/main/${projectName}`,
-        zip_url: `${STORAGE_URL}/files/${projectName}-${hash}.zip`,
+        zip_url: `${STORAGE_URL}/${siteName}/files/${projectName}-${hash}.zip`,
         name: projectName
     };
 
@@ -145,6 +144,8 @@ writeSync(
     JSON.stringify(startersData, null, 4)
 );
 
-// fs.cpSync(srcDir, destDir, { recursive: true });
+console.log("Copying Phaser template files...");
+
+fs.cpSync("phaser-site", `build/phaser`, { recursive: true });
 
 
