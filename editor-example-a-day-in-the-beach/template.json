@@ -1,5 +1,6 @@
 {
     "title": "A day in the beach",
+    "version": "1.0.0",
     "description": "A point-and-click game. With an advanced configuration.",
     "tags": [
         "webpack",

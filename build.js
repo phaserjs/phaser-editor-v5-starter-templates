@@ -1,14 +1,16 @@
 #!/usr/bin/env node
-import { createHash } from "crypto";
 import { readdir, stat, readFile } from "fs/promises";
 import path from "path";
-import { join } from "path";
 import fs, { cpSync, existsSync, glob, globSync, mkdirSync, rmSync, statSync, writeSync } from "fs";
 import archiver from "archiver";
 import ignore from "ignore";
 import fg from "fast-glob";
+import dotenv from "dotenv";
 
-const STORAGE_URL = "https://example.com/";
+dotenv.config();
+
+const STORAGE_URL = process.env.PHASER_EDITOR_V5_TEMPLATES_URL;
+
 const REPO_URL = "https://github.com/phaserjs/phaser-editor-v5-starter-templates";
 
 // computing the ignore rules
@@ -46,56 +48,6 @@ function shouldIgnore(filePath) {
     }
 
     return false;
-}
-
-async function hashFile(filePath) {
-
-    const content = await readFile(filePath);
-
-    const hash = createHash("sha256").update(content).digest("hex");
-
-    return hash;
-}
-
-async function hashFolder(folderPath) {
-
-    const entries = await readdir(folderPath, { withFileTypes: true });
-
-    const fileHashes = [];
-
-    for (const entry of entries) {
-
-        const fullPath = join(folderPath, entry.name);
-        const absolutePath = path.resolve(fullPath);
-
-        if (shouldIgnore(absolutePath)) {
-            // console.log(`Ignoring ${absolutePath}`);
-            continue;
-        }
-
-        const entryStat = await stat(fullPath);
-
-        if (entryStat.isDirectory()) {
-
-            const subfolderHash = await hashFolder(fullPath);
-            fileHashes.push(subfolderHash);
-
-        } else if (entryStat.isFile()) {
-
-            const fileHash = await hashFile(fullPath);
-            const hashWithPath = createHash("sha256")
-                .update(entry.name + ":" + fileHash)
-                .digest("hex");
-
-            fileHashes.push(hashWithPath);
-        }
-    }
-
-    fileHashes.sort();
-
-    return createHash("sha256")
-        .update(fileHashes.join("|"))
-        .digest("hex");
 }
 
 async function zipFolder(sourceFolder, outputZipPath) {
@@ -141,10 +93,6 @@ for (const projectName of projectNames) {
 
     console.log(`\nProcessing '${projectName}'...\n`);
 
-    console.log("Hashing files...");
-
-    const hash = await hashFolder(projectName);
-
     // build metadata
 
     const isExample = projectName.includes("-example-");
@@ -152,11 +100,13 @@ for (const projectName of projectNames) {
 
     const templateJSON = JSON.parse(await readFile(`${projectName}/template.json`, "utf8"));
 
+    const projectVersion = templateJSON.version;
+
     const templateData = {
         ...templateJSON,
         image: `screenshots/${projectName}.png`,
         website: `${REPO_URL}/tree/main/${projectName}`,
-        zip_url: `${STORAGE_URL}/${siteName}/files/${projectName}-${hash}.zip`,
+        zip_url: `${STORAGE_URL}/${siteName}/files/${projectName}-${projectVersion}.zip`,
         name: projectName
     };
 
@@ -183,7 +133,7 @@ for (const projectName of projectNames) {
         }
     });
 
-    await zipFolder(`build/${projectName}`, `build/${siteName}/files/${projectName}-${hash}.zip`);
+    await zipFolder(`build/${projectName}`, `build/${siteName}/files/${projectName}-${projectVersion}.zip`);
 
     rmSync(`build/${projectName}`, { recursive: true, force: true });
 

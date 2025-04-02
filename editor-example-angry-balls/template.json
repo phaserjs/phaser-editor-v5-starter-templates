@@ -1,5 +1,6 @@
 {
     "title": "Angry Balls (Box2D)",
+    "version": "1.0.0",
     "description": "A tiny Box2D demo with an angry birds-like gameplay.",
     "tags": [
         "javascript",

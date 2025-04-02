@@ -20,6 +20,7 @@
 	"dependencies": {
 		"@types/node": "^22.13.16",
 		"archiver": "^7.0.1",
+		"dotenv": "^16.4.7",
 		"fast-glob": "^3.3.3",
 		"ignore": "^7.0.3"
 	}

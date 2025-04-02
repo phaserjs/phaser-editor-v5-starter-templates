@@ -1,5 +1,6 @@
 {
     "title": "Box2D Starter",
+    "version": "1.0.0",
     "description": "A project starter for Box2D (JavaScript).",
     "tags": [
         "javascript",
