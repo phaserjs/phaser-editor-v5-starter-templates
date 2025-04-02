@@ -155,4 +155,19 @@ console.log("Copying Phaser template files...");
 
 fs.cpSync("phaser-site", `build/phaser`, { recursive: true });
 
+// fix Phaser templates.json
+
+const phaserTemplatesJSON = JSON.parse(await readFile(`build/phaser/templates.json`, "utf8"));
+
+for (const item of phaserTemplatesJSON) {
+
+    item.image = `${STORAGE_URL}/phaser/${item.image}`;
+}
+
+writeSync(
+    fs.openSync("build/phaser/templates.json", "w"),
+    JSON.stringify(phaserTemplatesJSON, null, 4)
+);
+
+
 
