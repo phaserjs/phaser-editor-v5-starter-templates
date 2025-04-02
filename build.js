@@ -104,10 +104,9 @@ for (const projectName of projectNames) {
 
     const templateData = {
         ...templateJSON,
-        image: `screenshots/${projectName}.png`,
         website: `${REPO_URL}/tree/main/${projectName}`,
-        zip_url: `${STORAGE_URL}/${siteName}/files/${projectName}-${projectVersion}.zip`,
-        name: projectName
+        image: `${STORAGE_URL}/${siteName}/screenshots/${projectName}.png`,
+        zip_url: `${STORAGE_URL}/${siteName}/files/${projectName}-${projectVersion}.zip`
     };
 
     (isExample ? examplesData : startersData).push(templateData);
