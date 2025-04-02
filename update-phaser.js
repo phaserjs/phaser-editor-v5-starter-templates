@@ -41,8 +41,6 @@ function updateNodeProject(project) {
     execSync(`npm install phaser@latest`, { cwd: project });
 
     console.log(`Updated package.json`);
-
-    autoCommitAndPush(project);
 }
 
 
@@ -74,37 +72,4 @@ function updateJSProject(project) {
 
     fs.copyFileSync(path.join(process.env.PHASER_PATH, "phaser", "types", "phaser.d.ts"), path.join(project, "types", "phaser.d.ts"));
     fs.copyFileSync(path.join(process.env.PHASER_PATH, "phaser", "types", "matter.d.ts"), path.join(project, "types", "matter.d.ts"));
-
-    autoCommitAndPush(project);
-}
-
-function autoCommitAndPush(folderPath) {
-
-    // Check for changes
-    const status = execSync("git status --porcelain", {
-        cwd: folderPath,
-        encoding: "utf-8"
-    });
-
-    if (status.trim().length === 0) {
-
-        console.log(`[${folderPath}] No changes to commit.`);
-        return;
-    }
-
-    console.log(`[${folderPath}] Changes detected. Committing...`);
-
-    // Commit all changes
-    execSync(`git commit -a -m "update to Phaser ${phaserVersion}"`, {
-        cwd: folderPath,
-        stdio: "inherit"
-    });
-
-    // Push changes
-    execSync("git push", {
-        cwd: folderPath,
-        stdio: "inherit"
-    });
-
-    console.log(`[${folderPath}] Changes committed and pushed.`);
 }
