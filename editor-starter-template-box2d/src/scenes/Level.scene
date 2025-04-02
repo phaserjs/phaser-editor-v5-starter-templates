@@ -55,7 +55,7 @@
             "y": 639,
             "originX": 0.5,
             "originY": 0.5,
-            "text": "Phaser 3 + Phaser Editor v4 + Box2D",
+            "text": "Phaser 4 + Phaser Editor v5 + Box2D",
             "fontFamily": "Arial",
             "fontSize": "30px",
             "list": [

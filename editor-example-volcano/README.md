@@ -1,6 +1,6 @@
 # Webpack + TypeScript project template for Phaser Editor
 
-A project template for Phaser 3, Webpack 5, TypeScript, and Phaser Editor v4.
+A project template for Phaser 4, Webpack 5, TypeScript, and Phaser Editor v5.
 It also includes a workflow for deploying the game to GitHub Pages.
 
 [You can play the game here](https://phaserjs.github.io/editor-example-volcano/)

@@ -67,7 +67,7 @@ export default class Level extends Phaser.Scene {
 		// welcome
 		const welcome = this.add.text(640, 639, "", {});
 		welcome.setOrigin(0.5, 0.5);
-		welcome.text = "Phaser 3 + Phaser Editor v4 + Box2D";
+		welcome.text = "Phaser 4 + Phaser Editor v5 + Box2D";
 		welcome.setStyle({ "fontFamily": "Arial", "fontSize": "30px" });
 
 		// textBody

@@ -30,7 +30,7 @@
             "y": 458,
             "originX": 0.5,
             "originY": 0.5,
-            "text": "Phaser 3 + Phaser Editor v4\nVite + TypeScript",
+            "text": "Phaser 4 + Phaser Editor v5\nVite + TypeScript",
             "align": "center",
             "fontFamily": "Arial",
             "fontSize": "3em"

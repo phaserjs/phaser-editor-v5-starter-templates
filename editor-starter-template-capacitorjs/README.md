@@ -1,10 +1,10 @@
-# CapacitorJS project template for Phaser Editor v4
+# CapacitorJS project template for Phaser Editor v5
 
-This a project template for building your Phaser 3 game into a native wrapper for different platforms.
+This a project template for building your Phaser 4 game into a native wrapper for different platforms.
 
 It uses the following tools:
 
-* Phaser 3 as game framework.
+* Phaser 4 as game framework.
 * Phaser Editor 2D as visual editor for scenes.
 * TypeScript for coding.
 * Webpack for bundling the assets.

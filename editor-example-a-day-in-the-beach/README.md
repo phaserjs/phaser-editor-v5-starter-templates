@@ -1,6 +1,6 @@
 # A day in the beach, an example game
 
-An example game made with Phaser Editor 2D. Based on Phaser 3, Webpack 5, TypeScript, and Phaser Editor 2D v3.
+An example game made with Phaser Editor 2D. Based on Phaser 4, Webpack 5, TypeScript, and Phaser Editor 2D v3.
 
 ![screenshot](.github/a-day-in-the-beach-screenshot.png)
 

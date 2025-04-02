@@ -41,7 +41,7 @@ export default class Level extends Phaser.Scene {
 		// text
 		const text = this.add.text(640, 458, "", {});
 		text.setOrigin(0.5, 0.5);
-		text.text = "Phaser 3 + Phaser Editor v4\nWebpack + TypeScript\nCapacitorJS";
+		text.text = "Phaser 4 + Phaser Editor v5\nWebpack + TypeScript\nCapacitorJS";
 		text.setStyle({ "align": "center", "fontFamily": "Arial", "fontSize": "3em" });
 
 		// onAwakeScript_1

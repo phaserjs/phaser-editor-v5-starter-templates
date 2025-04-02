@@ -1,6 +1,6 @@
 # Angry Balls - A Box2D demo
 
-This is a Phaser Editor v4 project demo.
+This is a Phaser Editor v5 project demo.
 
 ## Configuration
 

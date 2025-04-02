@@ -2,7 +2,7 @@
 
 ![game snapshot](.github/sunny-land-snapshot.png)
 
-This is a port to Phaser 3 of the [Sunny Land demo made by Luis Zuno](https://ansimuz.itch.io/sunny-land-pixel-game-art).
+This is a port to Phaser 4 of the [Sunny Land demo made by Luis Zuno](https://ansimuz.itch.io/sunny-land-pixel-game-art).
 
 This is a good example of how to use the Tilemap support in the Scene Editor, the User Components and the Animations Editor.
 

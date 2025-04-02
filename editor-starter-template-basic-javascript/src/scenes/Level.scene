@@ -16,7 +16,6 @@
             "type": "Image",
             "id": "7d5827fd-34f6-473f-90e0-b9424a51d5fa",
             "label": "dino",
-            "scope": "CLASS",
             "hitArea.shape": "RECTANGLE",
             "hitArea.width": 250,
             "hitArea.height": 250,
@@ -35,7 +34,7 @@
             "y": 478,
             "originX": 0.5,
             "originY": 0.5,
-            "text": "Phaser 3 + Phaser Editor v4",
+            "text": "Phaser 4 + Phaser Editor v5",
             "fontFamily": "Arial",
             "fontSize": "30px"
         }

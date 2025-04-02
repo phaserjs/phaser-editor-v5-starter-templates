@@ -26,17 +26,14 @@ export default class Level extends Phaser.Scene {
 		// welcome
 		const welcome = this.add.text(640, 478, "", {});
 		welcome.setOrigin(0.5, 0.5);
-		welcome.text = "Phaser 3 + Phaser Editor v4";
+		welcome.text = "Phaser 4 + Phaser Editor v5";
 		welcome.setStyle({ "fontFamily": "Arial", "fontSize": "30px" });
 
-		this.dino = dino;
 		this.welcome = welcome;
 
 		this.events.emit("scene-awake");
 	}
 
-	/** @type {Phaser.GameObjects.Image} */
-	dino;
 	/** @type {Phaser.GameObjects.Text} */
 	welcome;
 
@@ -46,12 +43,7 @@ export default class Level extends Phaser.Scene {
 
 	create() {
 
-		this.editorCreate();
-
-		this.dino.on("pointerdown", () => {
-
-			this.welcome.text = "Hello, World!";
-		});
+		this.editorCreate();		
 	}
 
 	/* END-USER-CODE */
