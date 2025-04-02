@@ -19,6 +19,8 @@
 	"homepage": "https://github.com/phaserjs/phaser-editor-v5-starter-templates#readme",
 	"dependencies": {
 		"@types/node": "^22.13.16",
-		"archiver": "^7.0.1"
+		"archiver": "^7.0.1",
+		"fast-glob": "^3.3.3",
+		"ignore": "^7.0.3"
 	}
 }
