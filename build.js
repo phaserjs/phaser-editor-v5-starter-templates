@@ -106,7 +106,7 @@ for (const projectName of projectNames) {
         ...templateJSON,
         website: `${REPO_URL}/tree/main/${projectName}`,
         image: `${STORAGE_URL}/${siteName}/screenshots/${projectName}.png`,
-        zip_url: `${STORAGE_URL}/${siteName}/files/${projectName}-${projectVersion}.zip`
+        zip_url: `${STORAGE_URL}/${siteName}/files/${projectName}.zip?v=${projectVersion}`
     };
 
     (isExample ? examplesData : startersData).push(templateData);
@@ -132,7 +132,7 @@ for (const projectName of projectNames) {
         }
     });
 
-    await zipFolder(`build/${projectName}`, `build/${siteName}/files/${projectName}-${projectVersion}.zip`);
+    await zipFolder(`build/${projectName}`, `build/${siteName}/files/${projectName}.zip`);
 
     rmSync(`build/${projectName}`, { recursive: true, force: true });
 
