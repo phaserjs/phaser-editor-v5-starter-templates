@@ -1,6 +1,6 @@
 {
     "title": "Sunny land (external tilemap)",
-    "version": 2,
+    "version": 3,
     "description": "A platformer based on a Tiled map, and Arcade physics.",
     "tags": [
         "javascript",
