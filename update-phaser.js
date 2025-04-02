@@ -52,7 +52,7 @@ function updateJSProject(project) {
 
     const indexFile = path.join(project, "index.html");
 
-    const str = fs.readFileSync(indexFile, "utf8");
+    const str = fs.readFileSync(indexFile, "utf8").trim();
 
     let newStr = "";
 
