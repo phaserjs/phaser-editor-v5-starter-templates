@@ -9,3 +9,15 @@ The environment variable `PHASER_EDITOR_V5_TEMPLATES_URL` should contain the url
 ```bash
 PHASER_EDITOR_V5_TEMPLATES_URL=https://mywebsite.com/templates
 ```
+
+## Update Phaser
+
+You can run the script `./update-phaser.js` to update the Phaser version in all templates.
+
+Since you updated the Phaser version, you need to increment the version of each template:
+
+`./increment-version-all-projects.js`
+
+And build the metadata a and zip files again:
+
+`./build.js`
