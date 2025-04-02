@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { readdir, stat, readFile } from "fs/promises";
-import path from "path";
+import path, { basename, dirname } from "path";
 import fs, { cpSync, existsSync, glob, globSync, mkdirSync, rmSync, statSync, writeSync } from "fs";
 import archiver from "archiver";
 import ignore from "ignore";
@@ -56,7 +56,7 @@ async function zipFolder(sourceFolder, outputZipPath) {
 
         const output = fs.createWriteStream(outputZipPath);
 
-        const archive = archiver("zip", { zlib: { level: 9 } });
+        const archive = archiver("zip", { zlib: { level: 9 },  });
 
         output.on("close", () => {
             console.log(`Created ${outputZipPath} (${archive.pointer()} bytes)`);
@@ -66,7 +66,7 @@ async function zipFolder(sourceFolder, outputZipPath) {
         archive.on("error", err => reject(err));
 
         archive.pipe(output);
-        archive.directory(sourceFolder, false);
+        archive.directory(sourceFolder, basename(sourceFolder));
         archive.finalize();
     });
 }
