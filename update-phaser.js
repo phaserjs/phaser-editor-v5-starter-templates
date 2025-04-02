@@ -1,12 +1,10 @@
 #!/usr/bin/env node
+import path from "path";
+import fs from "fs";
+import { execSync } from "child_process";
+import { exit } from "process";
 
-const path = require("path");
-const fs = require("fs");
-const { execSync } = require("child_process");
-
-
-
-const phaserVersion = require(process.env.PHASER_PATH + "/phaser/package.json").version;
+const phaserVersion = JSON.parse(fs.readFileSync(path.join(process.env.PHASER_PATH, "phaser", "package.json"), "utf8")).version;
 
 console.log("Phaser version:", phaserVersion);
 
@@ -17,13 +15,14 @@ const items = fs.readdirSync(currentDir, { withFileTypes: true });
 const nodeProjects = items
     .filter(item => item.isDirectory())
     .map(dir => path.join(currentDir, dir.name))
-    .filter(folder => fs.existsSync(path.join(folder, "node_modules")));
+    .filter(folder => fs.existsSync(path.join(folder, "package.json"))
+        && fs.existsSync(path.join(folder, "phasereditor2d.config.json")));
 
 const jsProjects = items
     .filter(item => item.isDirectory())
     .map(dir => path.join(currentDir, dir.name))
-    .filter(folder => !fs.existsSync(path.join(folder, "node_modules")));
-
+    .filter(folder => !fs.existsSync(path.join(folder, "package.json"))
+        && fs.existsSync(path.join(folder, "phasereditor2d.config.json")));
 
 for (const project of jsProjects) {
 
@@ -59,7 +58,7 @@ function updateJSProject(project) {
 
     let newStr = "";
 
-    for (line of str.split("\n")) {
+    for (let line of str.split("\n")) {
 
         if (line.includes("phaser.min.js")) {
 
