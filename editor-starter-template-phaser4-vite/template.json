@@ -1,6 +1,6 @@
 {
     "title": "Phaser 4 Beta Vite Starter",
-    "version": "1.0.0",
+    "version": 2,
     "description": "A starter template for Phaser 4 Beta",
     "tags": [
         "typescript",

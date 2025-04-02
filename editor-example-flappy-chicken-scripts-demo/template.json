@@ -1,6 +1,6 @@
 {
     "title": "Flappy Chicken",
-    "version": "1.0.0",
+    "version": 2,
     "description": "A cute flappy chicken demo. Made with script nodes.",
     "tags": [
         "script-nodes",

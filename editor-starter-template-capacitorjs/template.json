@@ -1,6 +1,6 @@
 {
     "title": "Basic CapacitorJS",
-    "version": "1.0.0",
+    "version": 2,
     "description": "A simple template for building native wrappers with CapiacitorJS.",
     "tags": [
         "typescript",

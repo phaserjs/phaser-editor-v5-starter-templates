@@ -1,6 +1,6 @@
 {
     "title": "Spine Starter",
-    "version": "1.0.0",
+    "version": 2,
     "description": "A project template for the official Spine-Phaser runtime.",
     "tags": [
         "typescript",

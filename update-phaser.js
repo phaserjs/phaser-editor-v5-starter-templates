@@ -43,7 +43,6 @@ function updateNodeProject(project) {
     console.log(`Updated package.json`);
 }
 
-
 function updateJSProject(project) {
 
     console.log(`Updating simple JS project: ${project}`);
