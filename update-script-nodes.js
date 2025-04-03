@@ -11,7 +11,6 @@ for (const project of projects) {
         console.log("Processing project", project);
 
         if (existsSync(`${project}/package.json`)) {
-            continue;
 
             console.log("Found node project");
 
@@ -31,7 +30,7 @@ for (const project of projects) {
 
             const PHASEREDITOR5_HOME = process.env.PHASEREDITOR5_HOME;
 
-            rmSync(`${project}/editor-scripts-base`, { recursive: true, force: true });
+            rmSync(`${project}/phaserjs_editor_scripts_base`, { recursive: true, force: true });
 
             const src = `${PHASEREDITOR5_HOME}/script-nodes/editor-scripts-base/browser`;
             const dst = `${project}/`;

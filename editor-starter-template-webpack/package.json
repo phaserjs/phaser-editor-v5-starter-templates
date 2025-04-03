@@ -11,7 +11,7 @@
   "author": "Phaser Editor 2D <developers@phasereditor2d.com> (https://phasereditor2d.com/)",
   "license": "MIT",
   "dependencies": {
-    "@phaserjs/editor-scripts-base": "^1.0.0",
+    "@phaserjs/editor-scripts-base": "^2.0.1",
     "phaser": "^3.88.2"
   },
   "devDependencies": {
