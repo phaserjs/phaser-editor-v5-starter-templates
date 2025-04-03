@@ -38,7 +38,7 @@ function updateNodeProject(project) {
 
     console.log(`Updating node project: ${project}`);
 
-    execSync(`npm install phaser@latest`, { cwd: project });
+    execSync(`npm install phaser@${phaserVersion}`, { cwd: project });
 
     console.log(`Updated package.json`);
 }

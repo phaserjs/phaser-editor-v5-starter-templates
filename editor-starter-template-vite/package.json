@@ -25,6 +25,6 @@
     },
     "dependencies": {
         "@phaserjs/editor-scripts-base": "^2.0.1",
-        "phaser": "^3.88.2"
+        "phaser": "^4.0.0-rc.1"
     }
 }
