@@ -1,6 +1,6 @@
 {
     "title": "Collect Coins",
-    "version": 4,
+    "version": 5,
     "description": "A Flappy Bird-like template.",
     "tags": [
         "javascript"
