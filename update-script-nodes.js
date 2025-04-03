@@ -34,7 +34,7 @@ for (const project of projects) {
             rmSync(`${project}/editor-scripts-base`, { recursive: true, force: true });
 
             const src = `${PHASEREDITOR5_HOME}/script-nodes/editor-scripts-base/browser`;
-            const dst = `${project}/editor-scripts-base`;
+            const dst = `${project}/`;
 
             console.log("Copying", src, "to", dst);
 
