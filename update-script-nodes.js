@@ -11,6 +11,7 @@ for (const project of projects) {
         console.log("Processing project", project);
 
         if (existsSync(`${project}/package.json`)) {
+            continue;
 
             console.log("Found node project");
 
@@ -19,7 +20,7 @@ for (const project of projects) {
             for (const lib of ["@phaserjs/editor-scripts-base", "@phaserjs/editor-scripts-quick"]) {
 
                 if (data.dependencies[lib]) {
-                    
+
                     execSync(`npm install ${lib}@latest`, { cwd: project, stdio: "inherit" });
                 }
             }
@@ -30,9 +31,14 @@ for (const project of projects) {
 
             const PHASEREDITOR5_HOME = process.env.PHASEREDITOR5_HOME;
 
-            // rmSync(`${project}/editor-scripts-base`, { recursive: true, force: true });
+            rmSync(`${project}/editor-scripts-base`, { recursive: true, force: true });
 
-            // cpSync(`${PHASEREDITOR5_HOME}/script-nodes/@phaserjs/editor-scripts-base/browser`, `${project}/editor-scripts-base`, { recursive: true });
+            const src = `${PHASEREDITOR5_HOME}/script-nodes/editor-scripts-base/browser`;
+            const dst = `${project}/editor-scripts-base`;
+
+            console.log("Copying", src, "to", dst);
+
+            cpSync(src, dst, { recursive: true, force: true });
         }
     }
 }
