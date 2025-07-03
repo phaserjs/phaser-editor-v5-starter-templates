@@ -1,6 +1,6 @@
 {
     "title": "Sunny land forest (built-in tilemap)",
-    "version": 6,
+    "version": 7,
     "description": "A platformer based on an editable tilemap, and Arcade physics.",
     "tags": [
         "javascript",
