@@ -5,7 +5,7 @@ This a project template for building your Phaser 4 game into a native wrapper fo
 It uses the following tools:
 
 * Phaser 4 as game framework.
-* Phaser Editor 2D as visual editor for scenes.
+* Phaser Editor as visual editor for scenes.
 * TypeScript for coding.
 * Webpack for bundling the assets.
 * [CapacitorJS](https://capacitorjs.com) for building a game native wrapper. It targets Android by default.

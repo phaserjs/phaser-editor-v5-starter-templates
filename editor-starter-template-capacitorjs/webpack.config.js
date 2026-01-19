@@ -24,6 +24,12 @@ module.exports = {
             }
         }
     },
+    performance: {
+        // Disable performance warnings for Phaser (game framework is naturally large)
+        hints: false,
+        maxEntrypointSize: 2000000,
+        maxAssetSize: 2000000
+    },
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "[name]-[contenthash].bundle.js",
