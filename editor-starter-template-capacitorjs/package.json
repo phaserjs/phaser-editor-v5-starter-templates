@@ -6,8 +6,6 @@
   "scripts": {
     "start": "webpack serve --mode=development --stats-error-details --node-env development",
     "build": "webpack --mode=production --node-env production && phaser-asset-pack-hashing -r dist",
-    "editor": "phasereditor2d-launcher -project . -port 1959",
-    "editor-remote": "phasereditor2d-launcher -project . -disable-open-browser -public -port 1959",
     "build-android": "npm run build && cap sync && cd android && ./gradlew clean && ./gradlew assemble",
     "run-ios": "npm run build && cap sync && cap run ios",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,24 +13,24 @@
   "author": "Phaser Editor 2D <developers@phasereditor2d.com> (https://phasereditor2d.com/)",
   "license": "MIT",
   "dependencies": {
-    "@capacitor/android": "^4.8.2",
-    "@capacitor/core": "^4.8.2",
-    "@capacitor/ios": "^4.8.2",
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
     "@phaserjs/editor-scripts-base": "^2.0.1",
     "@phaserjs/editor-scripts-quick": "^2.0.0",
     "phaser": "^4.0.0-rc.6"
   },
   "devDependencies": {
-    "@capacitor/cli": "^4.8.2",
-    "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^8.1.1",
-    "html-webpack-plugin": "^5.6.0",
+    "@capacitor/cli": "^8.0.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "html-webpack-plugin": "^5.6.3",
     "phaser-asset-pack-hashing": "^1.0.6",
-    "ts-loader": "^8.4.0",
-    "typescript": "^4.9.5",
-    "webpack": "^5.91.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.3",
+    "webpack": "^5.101.3",
     "webpack-clean-plugin": "^0.2.3",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.15.2"
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
   }
 }
