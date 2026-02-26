@@ -4,6 +4,7 @@
     "settings": {
         "exportClass": true,
         "autoImport": true,
+        "importFileExtension": true,
         "preloadMethodName": "editorPreload",
         "preloadPackFiles": [
             "starter-template-basic-typescript/assets/asset-pack.json"
