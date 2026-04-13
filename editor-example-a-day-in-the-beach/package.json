@@ -27,7 +27,7 @@
   "dependencies": {
     "@phaserjs/editor-scripts-base": "^2.0.1",
     "@phaserjs/editor-scripts-quick": "^2.0.0",
-    "phaser": "^4.0.0-rc.6",
+    "phaser": "^4.0.0",
     "webpack-dev-server": "^5.2.3"
   }
 }
