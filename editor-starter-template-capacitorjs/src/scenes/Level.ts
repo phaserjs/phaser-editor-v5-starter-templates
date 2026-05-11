@@ -3,6 +3,7 @@
 
 /* START OF COMPILED CODE */
 
+import Phaser from "phaser";
 import { OnPointerDownScript } from "@phaserjs/editor-scripts-quick";
 import { PushActionScript } from "@phaserjs/editor-scripts-quick";
 import { OnAwakeScript } from "@phaserjs/editor-scripts-quick";

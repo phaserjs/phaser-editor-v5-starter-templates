@@ -42,7 +42,7 @@ export default class Level extends Phaser.Scene {
 		SetWorldScale(40);
 		const world = CreateWorld({ worldDef: { 
 			...b2DefaultWorldDef()
-		 }});
+		}});
 		this.worldId = world.worldId;
 
 		// dino
@@ -54,7 +54,7 @@ export default class Level extends Phaser.Scene {
 			...b2DefaultBodyDef(), 
 			type: b2BodyType.b2_dynamicBody, 
 			position: pxmVec2(640, -288)
-		 });
+		});
 
 		// add dinoBody to dino
 		AddSpriteToWorld(this.worldId, dino, { bodyId: dinoBody });
@@ -62,7 +62,7 @@ export default class Level extends Phaser.Scene {
 		// dinoShape
 		const dinoShape = b2CreatePolygonShape(dinoBody, { 
 			...b2DefaultShapeDef()
-		 }, b2MakePolygon(b2ComputeHull([new b2Vec2(pxm(24.459450319691882), pxm(-111.95298247032741)), new b2Vec2(pxm(78.80519957882711), pxm(-86.7210274571575)), new b2Vec2(pxm(96.27347612640631), pxm(-39.16849685541422)), new b2Vec2(pxm(48.720945524662966), pxm(107.37093418261097)), new b2Vec2(pxm(6.991173772112802), pxm(116.10507245640053)), new b2Vec2(pxm(-79.37974915758423), pxm(61.75932319726536)), new b2Vec2(pxm(-118.19814148553792), pxm(-66.34137148498178)), new b2Vec2(pxm(-78.4092893493854), pxm(-97.39608534734475))], 8), 0));
+		}, b2MakePolygon(b2ComputeHull([new b2Vec2(pxm(24.459450319691882), pxm(-111.95298247032741)), new b2Vec2(pxm(78.80519957882711), pxm(-86.7210274571575)), new b2Vec2(pxm(96.27347612640631), pxm(-39.16849685541422)), new b2Vec2(pxm(48.720945524662966), pxm(107.37093418261097)), new b2Vec2(pxm(6.991173772112802), pxm(116.10507245640053)), new b2Vec2(pxm(-79.37974915758423), pxm(61.75932319726536)), new b2Vec2(pxm(-118.19814148553792), pxm(-66.34137148498178)), new b2Vec2(pxm(-78.4092893493854), pxm(-97.39608534734475))], 8), pxm(0)));
 
 		// welcome
 		const welcome = this.add.text(640, 639, "", {});
@@ -74,7 +74,7 @@ export default class Level extends Phaser.Scene {
 		const textBody = b2CreateBody(this.worldId, { 
 			...b2DefaultBodyDef(), 
 			position: pxmVec2(640, -639)
-		 });
+		});
 
 		// add textBody to welcome
 		AddSpriteToWorld(this.worldId, welcome, { bodyId: textBody });
@@ -82,7 +82,7 @@ export default class Level extends Phaser.Scene {
 		// textShape
 		const textShape = b2CreatePolygonShape(textBody, { 
 			...b2DefaultShapeDef()
-		 }, b2MakeBox(pxm(250.5), pxm(16.2451171875)));
+		}, b2MakeBox(pxm(250.5), pxm(16.2451171875)));
 
 		// Box2D debug graphics
 		this.debugGraphics = this.add.graphics();
