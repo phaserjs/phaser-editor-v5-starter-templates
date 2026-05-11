@@ -487,7 +487,7 @@ export default class Level extends Phaser.Scene {
 		// scoreLabel
 		const scoreLabel = this.add.text(57, 12, "", {});
 		scoreLabel.text = "0";
-		scoreLabel.setStyle({ align: "center", fontFamily: "VT323", fontSize: "8px" });
+		scoreLabel.setStyle({ "align": "center", "fontFamily": "VT323", "fontSize": "8px" });
 		hudLayer.add(scoreLabel);
 
 		// playerVsFloor

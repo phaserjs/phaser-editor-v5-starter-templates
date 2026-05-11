@@ -25,8 +25,6 @@ export default class FixedToCameraComp extends UserComponent {
 		return gameObject["__FixedToCameraComp"];
 	}
 
-	/** @type {Phaser.GameObjects.Image} */
-	gameObject;
 
 	/* START-USER-CODE */
 

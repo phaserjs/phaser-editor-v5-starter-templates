@@ -25,8 +25,6 @@ export default class ParallaxComp extends UserComponent {
 		return gameObject["__ParallaxComp"];
 	}
 
-	/** @type {Phaser.GameObjects.TileSprite} */
-	gameObject;
 	/** @type {number} */
 	factor = 0.5;
 
