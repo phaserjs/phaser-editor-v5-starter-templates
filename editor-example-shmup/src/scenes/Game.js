@@ -108,21 +108,21 @@ export default class Game extends Phaser.Scene {
 		const tutorialText = new UIText(this, 640, 360);
 		tutorialText.visible = true;
 		tutorialText.text = "Press space to start";
-		tutorialText.setStyle({});
+		tutorialText.setStyle({  });
 		uiLayer.add(tutorialText);
 
 		// scoreText
 		const scoreText = new UIText(this, 20, 20);
 		scoreText.setOrigin(0, 0);
 		scoreText.text = "Score: 0";
-		scoreText.setStyle({});
+		scoreText.setStyle({  });
 		uiLayer.add(scoreText);
 
 		// gameOverText
 		const gameOverText = new UIText(this, 640, 360);
 		gameOverText.visible = false;
 		gameOverText.text = "Game Over";
-		gameOverText.setStyle({});
+		gameOverText.setStyle({  });
 		uiLayer.add(gameOverText);
 
 		// player_vs_enemy_bullets
