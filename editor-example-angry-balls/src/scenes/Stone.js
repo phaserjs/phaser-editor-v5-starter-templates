@@ -3,6 +3,7 @@
 
 /* START OF COMPILED CODE */
 
+import Phaser from "phaser.js";
 import { b2CreateBody } from "../../lib/PhaserBox2D.js";
 import { b2DefaultBodyDef } from "../../lib/PhaserBox2D.js";
 import { b2BodyType } from "../../lib/PhaserBox2D.js";
@@ -24,8 +25,8 @@ export default class Stone extends Phaser.GameObjects.Image {
 		const body = b2CreateBody(this.scene.worldId, { 
 			...b2DefaultBodyDef(), 
 			type: b2BodyType.b2_dynamicBody, 
-			position: pxmVec2(x, -y)
-		 });
+			position: pxmVec2(this.x, -this.y)
+		});
 
 		// add body to this
 		AddSpriteToWorld(this.scene.worldId, this, { bodyId: body });
@@ -34,7 +35,7 @@ export default class Stone extends Phaser.GameObjects.Image {
 		const shape = b2CreatePolygonShape(body, { 
 			...b2DefaultShapeDef(), 
 			density: 10
-		 }, b2MakeBox(pxm(32), pxm(33)));
+		}, b2MakeBox(pxm(32), pxm(33)));
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.

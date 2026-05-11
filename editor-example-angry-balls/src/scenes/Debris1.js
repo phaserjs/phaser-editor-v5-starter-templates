@@ -3,6 +3,7 @@
 
 /* START OF COMPILED CODE */
 
+import Phaser from "phaser.js";
 import { b2CreateBody } from "../../lib/PhaserBox2D.js";
 import { b2DefaultBodyDef } from "../../lib/PhaserBox2D.js";
 import { b2BodyType } from "../../lib/PhaserBox2D.js";
@@ -26,8 +27,8 @@ export default class Debris1 extends Phaser.GameObjects.Image {
 		const body = b2CreateBody(this.scene.worldId, { 
 			...b2DefaultBodyDef(), 
 			type: b2BodyType.b2_dynamicBody, 
-			position: pxmVec2(x, -y)
-		 });
+			position: pxmVec2(this.x, -this.y)
+		});
 
 		// add body to this
 		AddSpriteToWorld(this.scene.worldId, this, { bodyId: body });
@@ -35,7 +36,7 @@ export default class Debris1 extends Phaser.GameObjects.Image {
 		// shape
 		const shape = b2CreatePolygonShape(body, { 
 			...b2DefaultShapeDef()
-		 }, b2MakePolygon(b2ComputeHull([new b2Vec2(pxm(-25.105138566407845), pxm(-19.858408917583176)), new b2Vec2(pxm(12.64858113440664), pxm(-28.387848152594472)), new b2Vec2(pxm(26.035131445289835), pxm(-1.1095946889080892)), new b2Vec2(pxm(10.21270783863099), pxm(28.302290725651744)), new b2Vec2(pxm(3.602415730736084), pxm(28.113425236854738)), new b2Vec2(pxm(-25.105138566407845), pxm(-12.681520343297166))], 6), 0));
+		}, b2MakePolygon(b2ComputeHull([new b2Vec2(pxm(-25.105138566407845), pxm(-19.858408917583176)), new b2Vec2(pxm(12.64858113440664), pxm(-28.387848152594472)), new b2Vec2(pxm(26.035131445289835), pxm(-1.1095946889080892)), new b2Vec2(pxm(10.21270783863099), pxm(28.302290725651744)), new b2Vec2(pxm(3.602415730736084), pxm(28.113425236854738)), new b2Vec2(pxm(-25.105138566407845), pxm(-12.681520343297166))], 6), pxm(0)));
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.

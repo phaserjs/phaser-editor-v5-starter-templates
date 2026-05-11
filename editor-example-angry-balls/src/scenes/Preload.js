@@ -3,6 +3,7 @@
 
 /* START OF COMPILED CODE */
 
+import Phaser from "phaser.js";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 

@@ -3,6 +3,7 @@
 
 /* START OF COMPILED CODE */
 
+import Phaser from "phaser.js";
 import { CreateWorld } from "../../lib/PhaserBox2D.js";
 import { SetWorldScale } from "../../lib/PhaserBox2D.js";
 import { b2DefaultWorldDef } from "../../lib/PhaserBox2D.js";
@@ -43,19 +44,19 @@ export default class Level extends Phaser.Scene {
 		SetWorldScale(40);
 		const world = CreateWorld({ worldDef: { 
 			...b2DefaultWorldDef()
-		 }});
+		}});
 		this.worldId = world.worldId;
 
 		// platformBody
 		const platformBody = b2CreateBody(this.worldId, { 
 			...b2DefaultBodyDef(), 
 			position: pxmVec2(284, -599)
-		 });
+		});
 
 		// platformShape
 		const platformShape = b2CreatePolygonShape(platformBody, { 
 			...b2DefaultShapeDef()
-		 }, b2MakeBox(pxm(31), pxm(68)));
+		}, b2MakeBox(pxm(31), pxm(68)));
 
 		// bg
 		const bg = this.add.tileSprite(0, -304, 2100, 1024, "colored_grass");
@@ -68,7 +69,7 @@ export default class Level extends Phaser.Scene {
 		const body = b2CreateBody(this.worldId, { 
 			...b2DefaultBodyDef(), 
 			position: pxmVec2(1050, -700)
-		 });
+		});
 
 		// add body to grass
 		AddSpriteToWorld(this.worldId, grass, { bodyId: body });
@@ -76,7 +77,7 @@ export default class Level extends Phaser.Scene {
 		// shape
 		const shape = b2CreatePolygonShape(body, { 
 			...b2DefaultShapeDef()
-		 }, b2MakeBox(pxm(1050), pxm(35)));
+		}, b2MakeBox(pxm(1050), pxm(35)));
 
 		// stone2
 		const stone2 = new Stone(this, 1610, 560, "elementStone011");
