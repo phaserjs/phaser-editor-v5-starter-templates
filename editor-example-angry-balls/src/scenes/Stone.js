@@ -3,7 +3,6 @@
 
 /* START OF COMPILED CODE */
 
-import Phaser from "phaser.js";
 import { b2CreateBody } from "../../lib/PhaserBox2D.js";
 import { b2DefaultBodyDef } from "../../lib/PhaserBox2D.js";
 import { b2BodyType } from "../../lib/PhaserBox2D.js";

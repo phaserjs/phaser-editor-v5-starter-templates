@@ -3,7 +3,6 @@
 
 /* START OF COMPILED CODE */
 
-import Phaser from "phaser.js";
 import { CreateWorld } from "../../lib/PhaserBox2D.js";
 import { SetWorldScale } from "../../lib/PhaserBox2D.js";
 import { b2DefaultWorldDef } from "../../lib/PhaserBox2D.js";
@@ -175,6 +174,8 @@ export default class Level extends Phaser.Scene {
 		const playerY = this.player.y;
 
 		this.input.on("pointerdown", () => {
+
+			console.log("pointerdown");
 
 			if (this.waiting) {
 
