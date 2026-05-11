@@ -5,6 +5,7 @@
 
 import { SpriteScript } from "@phaserjs/editor-scripts-quick";
 import { ScriptNode } from "@phaserjs/editor-scripts-base";
+import Phaser from "phaser";
 /* START-USER-IMPORTS */
 import Player from "../prefabs/Player";
 /* END-USER-IMPORTS */

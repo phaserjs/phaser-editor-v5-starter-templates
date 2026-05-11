@@ -3,6 +3,7 @@
 
 /* START OF COMPILED CODE */
 
+import Phaser from "phaser";
 import ScrollFactorScript from "../script-nodes/ScrollFactorScript";
 import MovingPlatform1 from "../prefabs/MovingPlatform1";
 import HorizontalMoveScript from "../script-nodes/HorizontalMoveScript";
