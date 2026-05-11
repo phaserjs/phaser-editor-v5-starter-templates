@@ -25,9 +25,9 @@
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
-    "@phaserjs/editor-scripts-base": "^2.0.1",
-    "@phaserjs/editor-scripts-quick": "^2.0.0",
-    "phaser": "^4.0.0",
+    "@phaserjs/editor-scripts-base": "^2.0.2",
+    "@phaserjs/editor-scripts-quick": "^2.0.1",
+    "phaser": "^4.1.0",
     "webpack-dev-server": "^5.2.3"
   }
 }

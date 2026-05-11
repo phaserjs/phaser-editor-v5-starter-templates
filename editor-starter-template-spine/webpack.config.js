@@ -35,6 +35,11 @@ module.exports = {
         assetModuleFilename: "asset-packs/[name]-[hash][ext][query]",
     },
     module: {
+        parser: {
+            javascript: {
+                importExportsPresence: false,
+            },
+        },
         rules: [
             {
                 test: /\.tsx?$/,
