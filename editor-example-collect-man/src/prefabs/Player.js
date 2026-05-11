@@ -65,19 +65,19 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 			const moveDirection = { x: 0, y: 0 }; // default move direction
 
 			if (leftKey) {
-				
+
 				moveDirection.x--;
 
 			} else if (rightKey) {
-				
+
 				moveDirection.x++;
 
 			} else if (upKey) {
-				
+
 				moveDirection.y--;
 
 			} else if (downKey) {
-				
+
 				moveDirection.y++;
 			}
 

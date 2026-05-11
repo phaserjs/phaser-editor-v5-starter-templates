@@ -9,16 +9,16 @@ import { ANIM_ENEMY_DOWN, ANIM_ENEMY_LEFT, ANIM_ENEMY_RIGHT, ANIM_ENEMY_UP } fro
 
 export default class Enemy extends Phaser.Physics.Arcade.Sprite {
 
-    constructor(scene, x, y, texture, frame) {
-        super(scene, x ?? 283, y ?? 205, texture || "characters", frame ?? 49);
+	constructor(scene, x, y, texture, frame) {
+		super(scene, x ?? 283, y ?? 205, texture || "characters", frame ?? 49);
 
-        this.setOrigin(0, 0);
-        scene.physics.add.existing(this, false);
-        this.body.collideWorldBounds = true;
-        this.body.setSize(32, 32, false);
-        this.play("enemy-down");
+		this.setOrigin(0, 0);
+		scene.physics.add.existing(this, false);
+		this.body.collideWorldBounds = true;
+		this.body.setSize(32, 32, false);
+		this.play("enemy-down");
 
-        /* START-USER-CTR-CODE */
+		/* START-USER-CTR-CODE */
 
         this.target.x = x;
         this.target.y = y;
@@ -36,9 +36,9 @@ export default class Enemy extends Phaser.Physics.Arcade.Sprite {
         this.mapRight = 672 - 32;
 
         /* END-USER-CTR-CODE */
-    }
+	}
 
-    /* START-USER-CODE */
+	/* START-USER-CODE */
 
     moveSpeed = 300; // time in milliseconds to move from one tile to another
     frameDuration = 0;

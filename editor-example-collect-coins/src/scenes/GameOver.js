@@ -41,7 +41,7 @@ export default class GameOver extends Phaser.Scene {
 		this.editorCreate();
 
 		this.input.once("pointerdown", () => this.startLevel());
-		
+
 		this.input.keyboard.once("keydown-SPACE", () => this.startLevel());
 	}
 
