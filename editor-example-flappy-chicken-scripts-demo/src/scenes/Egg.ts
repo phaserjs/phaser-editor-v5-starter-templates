@@ -3,6 +3,7 @@
 
 /* START OF COMPILED CODE */
 
+import Phaser from "phaser";
 import { OnAwakeScript } from "@phaserjs/editor-scripts-quick";
 import { ExecRandomActionScript } from "@phaserjs/editor-scripts-quick";
 import { SetVelocityXActionScript } from "@phaserjs/editor-scripts-quick";

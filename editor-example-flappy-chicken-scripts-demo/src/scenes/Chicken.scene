@@ -24,9 +24,9 @@
             "y": 121,
             "ArcadeComponent.active": true,
             "body.gravity.y": 400,
-            "collideWorldBounds": true,
-            "onWorldBounds": true,
-            "radius": 9,
+            "body.collideWorldBounds": true,
+            "body.onWorldBounds": true,
+            "body.radius": 9,
             "body.width": 17,
             "body.height": 18,
             "body.offset.x": 7,
@@ -168,8 +168,8 @@
     ],
     "plainObjects": [],
     "meta": {
-        "app": "Phaser Editor 2D - Scene Editor",
-        "url": "https://phasereditor2d.com",
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 5
     }

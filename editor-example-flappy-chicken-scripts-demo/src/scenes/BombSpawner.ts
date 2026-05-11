@@ -3,6 +3,7 @@
 
 /* START OF COMPILED CODE */
 
+import Phaser from "phaser";
 import { OnAwakeScript } from "@phaserjs/editor-scripts-quick";
 import { EmitRandomTickActionScript } from "@phaserjs/editor-scripts-quick";
 import { RandomInArrayComp } from "@phaserjs/editor-scripts-quick";

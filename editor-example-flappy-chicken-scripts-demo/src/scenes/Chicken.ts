@@ -3,6 +3,7 @@
 
 /* START OF COMPILED CODE */
 
+import Phaser from "phaser";
 import { OnEventScript } from "@phaserjs/editor-scripts-quick";
 import { SetVelocityXActionScript } from "@phaserjs/editor-scripts-quick";
 import { SetVelocityYActionScript } from "@phaserjs/editor-scripts-quick";

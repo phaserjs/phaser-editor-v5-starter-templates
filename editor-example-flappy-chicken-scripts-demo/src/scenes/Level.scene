@@ -39,7 +39,7 @@
                     "originX": 0,
                     "originY": 0,
                     "ArcadeComponent.active": true,
-                    "moves": false,
+                    "body.moves": false,
                     "body.width": 38,
                     "body.height": 285,
                     "isFilled": true,
@@ -55,7 +55,7 @@
                     "originX": 0,
                     "originY": 0,
                     "ArcadeComponent.active": true,
-                    "moves": false,
+                    "body.moves": false,
                     "body.width": 38,
                     "body.height": 285,
                     "isFilled": true,
@@ -736,8 +736,8 @@
         }
     ],
     "meta": {
-        "app": "Phaser Editor 2D - Scene Editor",
-        "url": "https://phasereditor2d.com",
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 5
     }

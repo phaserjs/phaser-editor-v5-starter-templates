@@ -3,6 +3,7 @@
 
 /* START OF COMPILED CODE */
 
+import Phaser from "phaser";
 import { OnAwakeScript } from "@phaserjs/editor-scripts-quick";
 import { MakeObjectColliderActionScript } from "@phaserjs/editor-scripts-quick";
 import { DestroyActionScript } from "@phaserjs/editor-scripts-quick";
