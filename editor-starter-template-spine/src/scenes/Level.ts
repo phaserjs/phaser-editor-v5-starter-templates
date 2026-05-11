@@ -3,10 +3,10 @@
 
 /* START OF COMPILED CODE */
 
+import Phaser from "phaser";
 import { OnAwakeScript } from "@phaserjs/editor-scripts-quick";
 import { MoveInSceneActionScript } from "@phaserjs/editor-scripts-quick";
-import { SkinsAndAnimationBoundsProvider } from "@esotericsoftware/spine-phaser";
-import { SpineGameObject } from "@esotericsoftware/spine-phaser";
+import { SkinsAndAnimationBoundsProvider } from "@esotericsoftware/spine-phaser-v4";
 import StartAnimationComp from "../components/StartAnimationComp";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */

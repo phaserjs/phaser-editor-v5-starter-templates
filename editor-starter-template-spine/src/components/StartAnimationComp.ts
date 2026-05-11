@@ -5,7 +5,7 @@
 
 import { UserComponent } from "@phaserjs/editor-scripts-base";
 /* START-USER-IMPORTS */
-import { SpineGameObject } from "@esotericsoftware/spine-phaser";
+import { SpineGameObject } from "@esotericsoftware/spine-phaser-v4";
 /* END-USER-IMPORTS */
 
 export default class StartAnimationComp extends UserComponent {

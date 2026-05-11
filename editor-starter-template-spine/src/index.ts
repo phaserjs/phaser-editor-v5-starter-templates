@@ -2,7 +2,7 @@ import Phaser from "phaser";
 import Level from "./scenes/Level";
 import preloadAssetPackUrl from "../static/assets/preload-asset-pack.json";
 import Preload from "./scenes/Preload";
-import { SpinePlugin } from "@esotericsoftware/spine-phaser";
+import { SpinePlugin } from "@esotericsoftware/spine-phaser-v4";
 
 class Boot extends Phaser.Scene {
 
