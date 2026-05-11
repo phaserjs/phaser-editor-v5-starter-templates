@@ -27,8 +27,6 @@ export default class ControllerButtonComp extends UserComponent {
 		return gameObject["__ControllerButtonComp"];
 	}
 
-	/** @type {Phaser.GameObjects.Image} */
-	gameObject;
 
 	/* START-USER-CODE */
 

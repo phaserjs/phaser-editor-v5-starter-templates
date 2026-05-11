@@ -25,8 +25,6 @@ export default class CharacterMoveComp extends UserComponent {
 		return gameObject["__CharacterMoveComp"];
 	}
 
-	/** @type {Phaser.GameObjects.Image} */
-	gameObject;
 	/** @type {number} */
 	deltaX = 0;
 	/** @type {number} */
