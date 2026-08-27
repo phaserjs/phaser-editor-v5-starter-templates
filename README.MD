@@ -12,12 +12,19 @@ PHASER_EDITOR_V5_TEMPLATES_URL=https://mywebsite.com/templates
 
 ## Update Phaser
 
-You can run the script `./update-phaser.js` to update the Phaser version in all templates.
+Prefer `./update-phaser-all.sh` (skill `update-templates-phaser`): pins `phaser` in every template and increments marketplace `template.json` versions.
 
-Since you updated the Phaser version, you need to increment the version of each template:
+Or by hand: `./update-phaser.js` then `./increment-version-all-projects.js`.
 
-`./increment-version-all-projects.js`
+And build the metadata and zip files again, then upload:
 
-And build the metadata a and zip files again:
+```
+./publish-templates.sh --check
+./publish-templates.sh --dry-run
+./publish-templates.sh
+```
 
-`./build.js`
+Agent skills (also catalogued from the Editor repo `developer-docs/skills.md`):
+
+- `update-templates-phaser` → `./update-phaser-all.sh`
+- `upload-templates` → `./publish-templates.sh`
